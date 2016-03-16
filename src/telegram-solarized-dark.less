@@ -1,0 +1,118 @@
+/**
+* Telegram Solarized Dark Grey v0.1 (2016-03-16)
+*
+* https://userstyles.org/
+* https://github.com/ristomatti/telegram-solarized-dark
+*
+* The MIT License (MIT) https://opensource.org/licenses/MIT
+*
+* (c) 2016 Ristomatti Airo <ristomatti@kallio.io>
+*/
+
+@import "solarized-dark-grey-palette.less";
+
+/* Contact list */
+div.im_dialog_message_wrap > div.im_dialog_peer > span {
+	color: @base1 !important; 
+
+	.im_dialog_wrap  a.im_dialog:hover {
+		background-color: @background1 !important;
+	}
+
+	.im_dialog_chat_from {
+		color: @blue !important;
+	}
+}
+
+/* Body */
+body,
+.modal-content,
+.im_message_wrap {
+	background-color: @background0 !important;
+	color: @base0 !important;
+}
+
+/* Message view */
+.im_message_body {
+	padding: 7px 10px;
+	border-radius: 0px;
+	background: @background1 !important;
+}
+
+/* Message text */
+.im_message_text {
+	line-height: 140%;
+	font-size: 14px;
+  color: @base1 !important;
+}
+
+/* Nessage delivery status */
+.im_message_unread .icon-message-status {
+	background: @yellow;
+}
+
+/* Date changed / service messages */
+.im_message_date_split,
+.im_service_message {
+	background-color: @background1;  
+}
+
+/* Links */
+a {
+	color: @orange;
+	text-decoration: none;
+}
+
+/* Navbar */
+.navbar-nav,
+.navbar-quick-nav {
+	background-color: @background2 !important;
+}
+.im_page_wrap {
+	background-color: @background0 !important;
+}
+
+/* Text input area */
+.im_send_panel_wrap {
+  background-color: @background2;
+}
+
+.form-control,
+.composer_rich_textarea:hover,
+.composer_rich_textarea:active,
+.composer_rich_textarea:focus,
+.composer_rich_textarea:empty {
+	box-shadow: none !important;
+	border-color: @background1;
+}
+
+.composer_rich_textarea:active,
+.composer_rich_textarea:empty {
+	background: @background1 !important;
+}
+
+.composer_rich_textarea:hover,
+.composer_rich_textarea:focus {
+	background: @background0 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	max-width: 10px !important;
+	max-height: 10px !important;
+	background: #181818 !important;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+	background: #181818 !important;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px !important;
+	background: rgba(80, 80, 80, .6) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(96, 96, 96, .6) !important;
+}
