@@ -11,19 +11,17 @@
 */
 /**
 * Solarized Dark Grey LESS color palette v0.1
-* 
+*
 * The MIT License (MIT) https://opensource.org/licenses/MIT
-* 
+*
 * (c) 2016 Ristomatti Airo <ristomatti@kallio.io>
 *
 * Solarized dark grey colors
-* 
+*
 *   background0  #141414
-*   background1  #1f1f1f
-*   background2  #333333
 *
 * Solarized dark base colors
-* 
+*
 *   base03       #002b36
 *   base02       #073642
 *   base01       #586e75
@@ -32,9 +30,9 @@
 *   base1        #93a1a1
 *   base2        #eee8d5
 *   base3        #fdf6e3
-* 
+*
 * Solarized accent colors
-* 
+*
 *   yellow       #b58900
 *   orange       #cb4b16
 *   red          #dc322f
@@ -44,78 +42,6 @@
 *   cyan         #2aa198
 *   green        #859900
 */
-/* Contact list */
-div.im_dialog_message_wrap > div.im_dialog_peer > span {
-  color: #93a1a1 !important;
-}
-div.im_dialog_message_wrap > div.im_dialog_peer > span .im_dialog_wrap a.im_dialog:hover {
-  background-color: #1f1f1f !important;
-}
-div.im_dialog_message_wrap > div.im_dialog_peer > span .im_dialog_chat_from {
-  color: #268bd2 !important;
-}
-/* Body */
-body,
-.modal-content,
-.im_message_wrap {
-  background-color: #141414 !important;
-  color: #839496 !important;
-}
-/* Message view */
-.im_message_body {
-  padding: 7px 10px;
-  border-radius: 0px;
-  background: #1f1f1f !important;
-}
-/* Message text */
-.im_message_text {
-  line-height: 140%;
-  font-size: 14px;
-  color: #93a1a1 !important;
-}
-/* Nessage delivery status */
-.im_message_unread .icon-message-status {
-  background: #b58900;
-}
-/* Date changed / service messages */
-.im_message_date_split,
-.im_service_message {
-  background-color: #1f1f1f;
-}
-/* Links */
-a {
-  color: #cb4b16;
-  text-decoration: none;
-}
-/* Navbar */
-.navbar-nav,
-.navbar-quick-nav {
-  background-color: #333333 !important;
-}
-.im_page_wrap {
-  background-color: #141414 !important;
-}
-/* Text input area */
-.im_send_panel_wrap {
-  background-color: #333333;
-}
-.form-control,
-.composer_rich_textarea:hover,
-.composer_rich_textarea:active,
-.composer_rich_textarea:focus,
-.composer_rich_textarea:empty {
-  box-shadow: none !important;
-  border-color: #1f1f1f;
-}
-.composer_rich_textarea:active,
-.composer_rich_textarea:empty {
-  background: #1f1f1f !important;
-}
-.composer_rich_textarea:hover,
-.composer_rich_textarea:focus {
-  background: #141414 !important;
-}
-/* Scrollbar */
 ::-webkit-scrollbar {
   max-width: 10px !important;
   max-height: 10px !important;
@@ -131,5 +57,73 @@ a {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(96, 96, 96, 0.6) !important;
+}
+body {
+  background-color: #141414 !important;
+  color: #839496 !important;
+}
+.tg_page_head .navbar {
+  background-color: #2e2e2e !important;
+}
+.im_dialogs_col .im_dialog_wrap a.im_dialog {
+  border-top: 1px solid #3a3a3a !important;
+  border-bottom: 1px solid #3a3a3a !important;
+}
+.im_dialogs_col .im_dialog_wrap a.im_dialog:hover {
+  background-color: #212121 !important;
+}
+.im_dialogs_col .im_dialog_wrap .im_dialog_message_wrap .im_dialog_peer {
+  color: #cad0d0 !important;
+}
+.im_dialogs_col .im_dialog_wrap .im_dialog_message_wrap .im_dialog_chat_from {
+  color: #cb4b16 !important;
+}
+.im_dialogs_col .im_dialog_wrap .im_dialog_message_wrap .im_dialog_message_text {
+  color: #93a1a1 !important;
+}
+.im_message_wrap {
+  background-color: #141414 !important;
+  color: #839496 !important;
+}
+.im_message_wrap .im_message_body {
+  padding: 7px 10px;
+  border-radius: 0px;
+  background: #212121 !important;
+}
+.im_message_wrap .im_message_text {
+  line-height: 140%;
+  font-size: 14px;
+  color: #93a1a1 !important;
+}
+.im_message_wrap .im_message_unread .icon-message-status {
+  background: #b58900;
+}
+.im_message_wrap .im_message_unread_split,
+.im_message_wrap .im_message_date_split,
+.im_message_wrap .im_service_message {
+  background-color: #212121;
+}
+.im_message_wrap a {
+  color: #cb4b16;
+  text-decoration: none;
+}
+.im_bottom_panel_wrap .im_send_panel_wrap {
+  background-color: #2e2e2e;
+}
+.im_bottom_panel_wrap .form-control,
+.im_bottom_panel_wrap .composer_rich_textarea:hover,
+.im_bottom_panel_wrap .composer_rich_textarea:active,
+.im_bottom_panel_wrap .composer_rich_textarea:focus,
+.im_bottom_panel_wrap .composer_rich_textarea:empty {
+  box-shadow: none !important;
+  border-color: #212121;
+}
+.im_bottom_panel_wrap .composer_rich_textarea:active,
+.im_bottom_panel_wrap .composer_rich_textarea:empty {
+  background: #212121 !important;
+}
+.im_bottom_panel_wrap .composer_rich_textarea:hover,
+.im_bottom_panel_wrap .composer_rich_textarea:focus {
+  background: #141414 !important;
 }
 }
