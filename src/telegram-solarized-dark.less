@@ -1,7 +1,7 @@
 /**
-* Telegram Solarized Dark Grey v0.1 (2016-03-16)
+* Telegram Solarized Dark Grey v0.2 (2016-03-17)
 *
-* https://userstyles.org/
+* https://userstyles.org/styles/125669/telegram-solarized-dark-grey
 * https://github.com/ristomatti/telegram-solarized-dark
 *
 * The MIT License (MIT) https://opensource.org/licenses/MIT
@@ -18,25 +18,64 @@ body {
 	color: @base0 !important;
 }
 
+// avatar bubble background colors
+.user_bgcolor_1 { background: @violet !important; }
+.user_bgcolor_2 { background: @green !important; }
+.user_bgcolor_3 { background: @yellow !important; }
+.user_bgcolor_4 { background: @blue !important; }
+.user_bgcolor_5 { background: @red !important; }
+.user_bgcolor_6 { background: @magenta !important; }
+.user_bgcolor_7 { background: @cyan !important; }
+.user_bgcolor_8 { background: @orange !important; }
+
+// page wrapper
+.im_page_wrap {
+	background-color: @background0 !important;
+	color: @base0 !important;
+	border-left: 1px solid @background2 !important;
+	border-right: 1px solid @background2 !important;
+}
+
 // header section
 .tg_page_head {
+	.tg_head_split,
 	.navbar {
 		background-color: @background2 !important;
 	}
 }
 
-// contact list
+// conversation list
+
+// search section
+.im_dialogs_col_wrap {
+	background-color: @background0 !important;
+	border-right: 2px solid @background2 !important;
+
+	input.im_dialogs_search_field {
+		background-color: @background1 !important;
+		border: 1px solid @background3 !important;
+	}
+}
+
 .im_dialogs_col {
 
-	// contact list contact
+	// conversation
 	.im_dialog_wrap {
 
+		// conversation
 		a.im_dialog {
 			border-top: 1px solid @background3 !important;
 			border-bottom: 1px solid @background3 !important;
 		}
 
-		// hover over contact
+		// active conversation
+		&.active {
+			a.im_dialog {
+				background-color: @background2 !important;
+			}
+		}
+
+		// hover over conversation
 		a.im_dialog:hover {
 			background-color: @background1 !important;
 		}
@@ -67,18 +106,9 @@ body {
 	background-color: @background0 !important;
 	color: @base0 !important;
 
-	// message body
-	.im_message_body {
-		padding: 7px 10px;
-		border-radius: 0px;
-		background: @background1 !important;
-	}
-
 	// message text
 	.im_message_text {
-		line-height: 140%;
-		font-size: 14px;
-	  color: @base1 !important;
+		color: @base1 !important;
 	}
 
 	// message delivery status
@@ -86,7 +116,7 @@ body {
 		background: @yellow;
 	}
 
-	// date changed / service messages 
+	// date changed / service messages
 	.im_message_unread_split,
 	.im_message_date_split,
 	.im_service_message {
@@ -100,12 +130,31 @@ body {
 	}
 }
 
+// mobile conversation message wrapper
+.mobile_scrollable_wrap .im_message_wrap {
+
+	// message body
+	.im_message_body {
+		background-color: @background1 !important;
+		padding: 7px 10px;
+		border-radius: 0px;
+	}
+
+	// message text
+	.im_message_text {
+		line-height: 140%;
+		font-size: 14px;
+	}
+
+}
+
 // bottom section
 .im_bottom_panel_wrap {
 
 	// text input area
 	.im_send_panel_wrap {
-	  background-color: @background2;
+		// enable later if it can somehow be mobile only
+		//background-color: @background2;
 	}
 
 	.form-control,
@@ -119,7 +168,7 @@ body {
 
 	.composer_rich_textarea:active,
 	.composer_rich_textarea:empty {
-		background: @background1 !important;
+		background: @background0 !important;
 	}
 
 	.composer_rich_textarea:hover,
@@ -127,4 +176,3 @@ body {
 		background: @background0 !important;
 	}
 }
-
