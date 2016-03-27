@@ -15,6 +15,9 @@ Schoonover.
 
 ## Changelog
 
+#### Version 0.3
+* Fix day change/unread messages notification colors
+
 #### Version 0.2
 * Support for desktop mode
 
