@@ -133,14 +133,15 @@ body {
 .im_message_wrap .im_message_unread .icon-message-status {
   background: #b58900;
 }
-.im_message_wrap .im_message_unread_split,
-.im_message_wrap .im_message_date_split,
-.im_message_wrap .im_service_message {
-  background-color: #212121;
-}
 .im_message_wrap a {
   color: #cb4b16;
   text-decoration: none;
+}
+.im_message_unread_split,
+.im_message_date_split,
+.im_service_message {
+  background-color: #212121 !important;
+  color: #eee8d5 !important;
 }
 .mobile_scrollable_wrap .im_message_wrap .im_message_body {
   background-color: #212121 !important;

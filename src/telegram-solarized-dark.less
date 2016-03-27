@@ -116,18 +116,19 @@ body {
 		background: @yellow;
 	}
 
-	// date changed / service messages
-	.im_message_unread_split,
-	.im_message_date_split,
-	.im_service_message {
-		background-color: @background1;
-	}
-
 	// links
 	a {
 		color: @orange;
 		text-decoration: none;
 	}
+}
+
+// date changed / service messages
+.im_message_unread_split,
+.im_message_date_split,
+.im_service_message {
+	background-color: @background1 !important;
+	color: @base2 !important;
 }
 
 // mobile conversation message wrapper
