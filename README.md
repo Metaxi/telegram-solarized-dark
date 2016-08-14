@@ -9,6 +9,11 @@ Schoonover.
 2. Install theme from
    [userstyles.org](https://userstyles.org/styles/125669/telegram-solarized-dark-grey)
 
+## Preview
+
+![Telegram Solarized Dark Grey
+preview](https://raw.githubusercontent.com/ristomatti/telegram-solarized-dark/master/example-screenshot.png)
+
 ## Build userstyles.org export file
 
 ``` ./build.sh ```
