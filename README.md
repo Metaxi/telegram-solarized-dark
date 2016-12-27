@@ -20,6 +20,9 @@ preview](https://raw.githubusercontent.com/ristomatti/telegram-solarized-dark/ma
 
 ## Changelog
 
+#### Version 0.4
+* Code blocks (contributed by @albalitz)
+
 #### Version 0.3
 * Fix day change/unread messages notification colors
 
