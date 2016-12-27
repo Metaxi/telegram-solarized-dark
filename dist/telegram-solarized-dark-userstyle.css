@@ -61,6 +61,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(96, 96, 96, 0.6) !important;
 }
+code,
+pre {
+  background-color: #3a3a3a;
+  color: white;
+}
+pre {
+  border: none;
+}
 body {
   background-color: #141414 !important;
   color: #839496 !important;
