@@ -1,7 +1,10 @@
 //
-// Solarized Dark Grey Theme v1 for Telegram Desktop (2017-01-22)
+// Solarized Dark Grey Theme v2 for Telegram Desktop (2017-01-23)
 //
 // https://github.com/ristomatti/telegram-solarized-dark
+//
+// See also related Stylish theme:
+// https://userstyles.org/styles/125669/telegram-solarized-dark-grey
 //
 // The MIT License (MIT) https://opensource.org/licenses/MIT
 //
@@ -46,17 +49,17 @@ windowBoldFgOver: base2;
 windowBgActive: background1;
 windowFgActive: windowSubTextFg;
 windowActiveTextFg: orange; // Texto Yo, Foto, Persona
-windowShadowFg: background0;
+windowShadowFg: #141414FF;
 windowShadowFgFallback: background0;
-shadowFg: #212121FF;
-slideFadeOutBg: #93a1a13c;
+shadowFg: #141414FF;
+slideFadeOutBg: #93a1a1FF;
 slideFadeOutShadowFg: windowShadowFg;
 imageBg: base1;
 imageBgTransparent: background1;
-activeButtonBg: background1;
+activeButtonBg: green;
 activeButtonBgOver: background2;
 activeButtonBgRipple: base01; // Press chat active
-activeButtonFg: windowFgActive;
+activeButtonFg: base2;
 activeButtonFgOver: activeButtonFg;
 activeButtonSecondaryFg: #cceeff;
 activeButtonSecondaryFgOver: activeButtonSecondaryFg;
@@ -81,40 +84,40 @@ menuBgRipple: windowBgRipple;
 menuIconFg: #a8a8a8;
 menuIconFgOver: #999999;
 menuSubmenuArrowFg: #373737;
-menuFgDisabled: #cccccc;
-menuSeparatorFg: #333333;
-scrollBarBg: #FFFFFF73;
+menuFgDisabled: base00;
+menuSeparatorFg: background2;
+scrollBarBg: base1;
 scrollBarBgOver: base2;
-scrollBg: #9393931a;
-scrollBgOver: #9393931a;
+scrollBg: #141414FF;
+scrollBgOver: #212121FF;
 smallCloseIconFg: #c7c7c7;
 smallCloseIconFgOver: #a3a3a3;
 radialFg: windowFgActive;
-radialBg: #93a1a156;
+radialBg: #141414FF;
 placeholderFg: windowSubTextFg;
 placeholderFgActive: #aaaaaa;
-inputBorderFg: #e0e0e0;
+inputBorderFg: background1;
 filterInputBorderFg: base2;
 checkboxFg: #b3b3b3;
 sliderBgInactive: windowBgActive;
 sliderBgActive: #e1eaef;
-tooltipBg: #eef2f5;
-tooltipFg: #5d6c80;
-tooltipBorderFg: #c9d1db;
+tooltipBg: background1;
+tooltipFg: base2;
+tooltipBorderFg: background2;
 titleBg: background1;
-titleShadow: #93a1a103;
+titleShadow: #141414FF;
 titleButtonFg: base1;
-titleButtonBgOver: #0d1011;
+titleButtonBgOver: background2;
 titleButtonFgOver: base2;
 titleButtonCloseBgOver: #e81123;
 titleButtonCloseFgOver: windowFgActive;
 titleFgActive: windowBoldFg;
 titleFg: base2;
-trayCounterBg: #f23c34;
+trayCounterBg: background1;
 trayCounterBgMute: #888888;
 trayCounterFg: base2;
-trayCounterBgMacInvert: base2;
-trayCounterFgMacInvert: #ffffff01;
+trayCounterBgMacInvert: background0;
+trayCounterFgMacInvert: #base2FF;
 layerBg: #3333337f; // Fondo overlay
 cancelIconFg: menuIconFg;
 cancelIconFgOver: menuIconFgOver;
@@ -162,9 +165,9 @@ dialogsVerifiedIconBg: blue;
 dialogsVerifiedIconFg: base2;
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: base2;
-dialogsUnreadBg: yellow;
-dialogsUnreadBgMuted: windowBgActive;
-dialogsUnreadFg: windowBgOver;
+dialogsUnreadBg: blue;
+dialogsUnreadBgMuted: base00;
+dialogsUnreadFg: base3;
 dialogsBgOver: windowBgOver;
 dialogsNameFgOver: windowBoldFgOver;
 dialogsChatIconFgOver: dialogsNameFgOver;
@@ -179,7 +182,7 @@ dialogsSentIconFgOver: dialogsSentIconFg;
 dialogsUnreadBgOver: dialogsUnreadBg;
 dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
 dialogsUnreadFgOver: dialogsUnreadFg;
-dialogsBgActive: background2; // Active chat background in chat list
+dialogsBgActive: background0; // Active chat background in chat list
 dialogsNameFgActive: base2;
 dialogsChatIconFgActive: dialogsNameFgActive;
 dialogsDateFgActive: windowFgActive;
@@ -188,7 +191,7 @@ dialogsTextFgServiceActive: dialogsTextFgActive;
 dialogsDraftFgActive: windowSubTextFg;
 dialogsVerifiedIconBgActive: dialogsVerifiedIconBg;
 dialogsVerifiedIconFgActive: dialogsVerifiedIconFg;
-dialogsSendingIconFgActive: #14141499;
+dialogsSendingIconFgActive: #141414FF;
 dialogsSentIconFgActive: dialogsTextFgActive;
 dialogsUnreadBgActive: dialogsTextFgActive;
 dialogsUnreadBgMutedActive: dialogsDraftFgActive;
@@ -328,7 +331,7 @@ toastBg: background1;
 toastFg: base2;
 reportSpamBg: emojiPanHeaderBg;
 reportSpamFg: windowFg;
-historyToDownShadow: #93a1a140;
+historyToDownShadow: #141414FF;
 historyComposeAreaBg: msgInBg;
 historyComposeAreaFg: historyTextInFg;
 historyComposeAreaFgService: msgInDateFg;
